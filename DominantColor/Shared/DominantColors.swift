@@ -184,5 +184,5 @@ private func scaledDimensionsForPixelLimit(_ limit: Int, width: Int, height: Int
 
 private func selectKForElements<T>(_ elements: [T]) -> Int {
     // Seems like a magic number...
-    return 16
+    min(elements.count, 16)
 }
